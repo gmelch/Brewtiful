@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style/style-home.css">
+    <link rel="stylesheet" href="style/mobile-style.css">
+
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<style type="text/css">
+
+		body {
+			font-family: "Raleway";
+			overflow: auto;
+		}
+		h1.contact_heading {
+			font-size: 40px;
+			font-family: "Raleway";
+		}
+		.direct_contacts h1 {
+			font-size: 20px;
+			margin-bottom: 0;
+			margin-top: 40px;
+		}
+		.direct_contacts p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.split {
+			height: 100%;
+			width: 50%;
+			position: fixed;
+			z-index: 1;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.left {
+			left: 30px;
+			min-width: 50%;
+
+		}
+		.right {
+			right: 0;
+			min-width: 50%;
+			text-align: center;
+4		}
+
+		.contact_form {
+			border-style: solid;
+			border-width: 1px;
+			padding: 20px 20px;
+			height: 450px;
+			width: 350px;
+			border-radius: 30px;
+			display: block;
+			text-align: center;
+			align-items: center;
+		}
+
+		.contact_form input {
+			padding: 10px 10px 10px 10px;
+
+		}
+
+		input.text_input {
+			height: 20px;
+			width: 300px;
+			border-radius: 15px;
+		}
+
+		.confirm_form {
+			border-style: solid;
+			border-width: 1px;
+			top: 25%;
+			left: 50px;
+			min-height: 40px;
+			max-width: 300px;
+			text-align: center;
+			align-content: center;
+
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".confirm_form").hide();
+
+		});
+
+		function showConfirmation() {
+			$(".confirm_form").show();
+			$(".confirm_form").delay(5000).fadeOut();
+
+		}
+	</script>
+</head>
+<body>
+	<div class="confirm_form">
+		Thank you for your message. <br>
+		We will be in contact with you soon.
+	</div>
+	<div class="split left">
+		<div class="direct_contacts">
+			<h1>Headquarters</h1>
+				<p class="contact_email">brewtiful@gmail.com</p>
+				<p class="contact_phone">617-559-3323</p>
+				<address><a href="https://www.google.com/maps/place/161+College+Ave,+Medford,+MA+02155/@42.4082737,-71.1176501,17z/data=!3m1!4b1!4m5!3m4!1s0x89e376dc996a4dad:0x7bc51a6fd6e9ab37!8m2!3d42.4082738!4d-71.1155078" target="_blank">161 College Avenue</a></address>
+			<h1>Cambridge</h1>
+				<p class="contact_email">cambridge.brew@gmail.com</p>
+				<p class="contact_phone">617-838-0900</p>
+				<address><a href="https://www.google.com/maps/place/98+Ash+St,+Cambridge,+MA+02138/@42.3731237,-71.1283397,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37768a3fa21e3:0x566912e4fcae8e3e!8m2!3d42.3731237!4d-71.1263027" target="_blank">98 Ash Street</a></address>
+				<p class="contact_hours"></p>
+				<p class="contact_hours">Monday-Saturday 6 am - 3 pm</p>
+			<h1>Watertown</h1>
+				<p class="contact_email">watertown.brew@gmail.com</p>
+				<p class="contact_phone">617-435-2988</p>
+				<address><a href="https://www.google.com/maps/place/1-15+Patten+St,+Watertown,+MA+02472/@42.3663858,-71.1821556,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x89e37768a3fa21e3:0x566912e4fcae8e3e!2s98+Ash+St,+Cambridge,+MA+02138!3b1!8m2!3d42.3731237!4d-71.1263027!3m4!1s0x89e37804d6b4b601:0xa60cd6d174bb689!8m2!3d42.3663858!4d-71.1809422" target="_blank">15 Pattern Street</a></address>
+				<p class="contact_hours"></p>
+				<p class="contact_hours">Monday-Saturday 6 am - 3 pm</p>
+			<h1>Wellesley</h1>
+				<p class="contact_email">wellesley.brew@gmail.com</p>
+				<p class="contact_phone">617-222-3478</p>
+				<address><a href="https://www.google.com/maps/place/23+Central+St,+Wellesley,+MA+02482/@42.296466,-71.2974976,17z/data=!3m1!4b1!4m5!3m4!1s0x89e386c9c8e768a1:0x4c87951063cc4248!8m2!3d42.296466!4d-71.2953089" target="_blank">23 Central Street</a></address>
+				<p class="contact_hours">Monday-Saturday 6 am - 3 pm</p>
+		</div>
+	</div>
+	<div class="split right">
+		<h1 class="contact_heading">Contact Us</h1>
+		<form class="contact_form">
+			<input class="text_input" type="text" name="Name" value="Name">
+			<br>
+			<br>
+			<input class="text_input" type="email" name="Email" value="Email">
+			<br>
+			<br>
+			<input class="text_input" type="text" name="Phone" value="Phone">
+			<br>
+			<br>
+			<input class="text_input" type="text" name="Message" style="height: 200px" value="Message">
+			<br>
+			<br>
+			<button class="form_button" onclick="showConfirmation()">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -110,12 +110,13 @@ body {
 }
 
 #products {
+	height: 60vh;
   flex-grow: row;
   justify-content: space-around;
 }
 
 #products img {
-  height: 50%;
+  width: 20vw;
   margin: 0 3vw;
 }
 

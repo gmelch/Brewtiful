@@ -49,6 +49,10 @@
       font-size: 2em;
     }
 
+    #products img {
+      width: 40vw;
+    }
+
     #beans {
       flex-direction: column;
       padding: 0 5vw;
@@ -58,7 +62,6 @@
     }
 
     #beans img {
-      opacity: 0;
       margin-top: 10vh;
     }
 

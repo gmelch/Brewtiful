@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Apply for Job</title>
+<style>
+	body { 
+		font-family: raleway, Helvetica, sans-serif;
+		margin:0;
+  		background-color: #F5F5F5;
+	}
+	* {box-sizing: border-box}
+
+	input[type=text], input[type=number] {
+	  width: 100%;
+	  margin: 5px 0 20px 0;
+	  display: inline-block;
+	  border: none;
+	  background: #f1f1f1;
+	  padding: 20px;
+	}
+
+	hr {
+	  border: 0.5px solid #333333;
+	  margin-bottom: 25px;
+	}
+
+	.go-back {
+	  padding: 12px 18px;
+	  background-color: #870002;
+	  color: #ffffff;
+	}
+
+	.sign-up {
+	  padding: 12px 18px;
+	  background-color: #056627;
+	  color: #ffffff;
+	}
+
+	.go-back, .sign-up {
+	  float: left;
+	  width: 50%;
+	}
+
+	.container {
+	  padding: 20px;
+	}
+
+	/* To ensure the buttons are responsive for smaller screens */
+	@media screen and (max-width: 300px) {
+	  .go-back, .sign-up {
+	     width: 100%;
+	  }
+	}
+
+	#job_list {
+		margin-top: 50px;
+	}
+
+	div h2 {
+		text-align: center;
+		color: #333333;
+	}
+	#resume {
+	  background-color: #0067B7;
+	  color: #ffffff;
+	  font-size: 16px;
+	  padding: 15px 40px;
+	  border: none;
+	  cursor: pointer;
+	  border-radius: 10px;
+	  text-align: center;
+	  
+	}
+
+	#line1 {
+	  font-size: 20px;
+	  margin-left: 200px; 
+	  color: #333333;
+	}
+
+
+</style>
+</head>
+<body>
+	<div>
+		<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+	</ul>
+	</div>
+
+<div id="job_list">
+	<h2>JOB APPLICATION FORM</h2>
+</div>
+
+
+  <div class="container">
+    <hr>
+    <form action="file:///Users/onyedikaekechukwu/Desktop/Comp20%20PROJECT/submitted.html">
+
+    <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Your Full Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Your Email" name="email" required>
+
+    <label for="phone-num"><b>Phone Number</b></label>
+    <input type="number" placeholder="Phone Number" name="phone-num" required>
+
+    <label for="position"><b>Position</b></label></br>
+    <select required>
+    	<option value="">None</option>
+	  <option value="first">Manager</option>
+	  <option value="second">Cashier</option>
+	  <option value="third">Café Maker</option>
+	  <option value="fourth">Cleaner</option>
+	</select></br></br>
+
+		<b>Would  You Be Able To Work Evening and/or Weekend Shifts</b></br>
+			<label><input type="radio" name="shift" value="Yes" required></label> Yes</br>
+			<label><input type="radio" name="shift" value="No" required></label> No</br>
+			<label><input type="radio" name="shift" value="Not Sure" required></label> Not Sure</br></br>
+
+	
+
+	<label for="shift"><b>Please Attach Your Resumé Below</b></label></br> 
+	<input type="file" name="myFile" required><br><br>
+
+    <div class="clearfix">
+      <a href="file:///Users/onyedikaekechukwu/Desktop/Comp20%20PROJECT/jobs.html"><button type="button" class="go-back">Go Back</button></a>
+      <input type="Submit" class="sign-up" value="Submit">
+    </div>
+    </form>
+
+    <script>
+    	$('input:submit').click(function(e)
+		{
+		  if(!$.validate())
+		  e.preventDefault();
+		});
+    </script>
+
+
+
+
+
+  </div>
+</body>
+</html>

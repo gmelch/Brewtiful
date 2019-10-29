@@ -105,6 +105,10 @@ li a:hover:not(.active) {
   margin-top: 180px;
 }
 
+#p23 {
+  margin-top: 50px;
+}
+
 #p3, #p32, #p33 {
   font-size: 20px;
   margin-left: 60px;

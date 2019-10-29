@@ -95,6 +95,10 @@
       margin-bottom: 5vh;
     }
 
+    #split-sides {
+      flex-direction: column;
+    }
+
     footer a {
       text-decoration: underline;
     }
